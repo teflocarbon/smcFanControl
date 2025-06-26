@@ -13,7 +13,7 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Set Default Scheme
         run: |
           scheme_list=$(xcodebuild -list -json | tr -d "\n")
@@ -33,7 +33,7 @@ jobs:
           cd ./build/Release/
           tar -czvf smc.tar.gz smc
       - name: Upload smc.tar.gz
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: smc
           path: ./build/Release/smc.tar.gz
@@ -42,7 +42,7 @@ jobs:
           cd ./build/Release/
           tar -czvf smcFanControl.tar.gz smcFanControl.app
       - name: Upload smcFanControl.tar.gz
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: smcFanControl
           path: ./build/Release/smcFanControl.tar.gz

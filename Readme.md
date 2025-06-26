@@ -25,9 +25,6 @@ Compiled version: https://www.eidac.de/smcfancontrol/smcfancontrol_2_6.zip
 
 FAQ / More info: Found in project under "Ressources/*.lproj/F.A.Q.rtf" or included in above .zip
 
-## Nightly Builds (Supports Apple Silicon & Intel)
-[smcFanControl.zip](https://nightly.link/RaafatAkkad/smcFanControl/workflows/objective-c-xcode/master/smcFanControl.zip)
-
 Nightly builds are not signed and require running
 ```
 sudo xattr -cr /Applications/smcFanControl.app
